@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    --clr-white: #ffffff;
+    --clr-pale-blue: #ebf1ff;
+    --clr-light-lavender: #c8c7ff;
+    --clr-slate-gray: #303b5a;
+    --clr-bg-slate-blue: #7857ff;
+    --clr-bg-royal-blue: #2e2be9;
+    --clr-violet-blue: #4e21ca;
+    --clr-persian-blue: #2421ca00;
+    --clr-light-red: #ff5757;
+    --clr-orange-yellow: #ffb01f;
+    --clr-green-teal: #00bd91;
+    --clr-cobalt-blue: #1125d4;
+}
+
+p {
+    font-size: 17px;
+}
+
+* {
+    font-family: Hanken Grotesk;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 64.063rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    /* border: 2px solid red */
+}
+
+.left-box {
+    background-image: linear-gradient(var(--clr-bg-slate-blue), var(--clr-violet-blue), var(--clr-bg-royal-blue) 120%);
+    width: 20em;
+    height: 24em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 1.4em;
+    border-radius: 2em;
+}
+
+.circle {
+    background-image: linear-gradient(var(--clr-bg-slate-blue), var(--clr-violet-blue));
+    border-radius: 100%;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.result {
+    font-weight: 800;
+    color: var(--clr-light-lavender);
+    font-size: 1.5em;
+}
+
+.rating {
+    color: var(--clr-white);
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.max-rating {
+    color: var(--clr-light-lavender);
+    font-weight: 600;
+}
+
+.text-great {
+    font-weight: 800;
+    color: var(--clr-white);
+}
+
+.msg {
+    color: var(--clr-light-lavender);
+    font-weight: 600;
+    max-width: 25ch;
+    font-size: 16px;
+}
+
+
+/* right-side */
+
+
+
+
+/* MEDIA QUERIES START */
+
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .section {
+        margin-top: 5rem;
+    }
+
+}
+
+
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
