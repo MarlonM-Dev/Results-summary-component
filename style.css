@@ -16,10 +16,10 @@
     --clr-orange-yellow: #ffb01f;
     --clr-green-teal: #00bd91;
     --clr-cobalt-blue: #1125d4;
-    --clr-light-red-transparent: rgba(255, 87, 87, 0.157);
-    --clr-orange-yellow-transparent: rgba(255, 177, 31, 0.157);
-    --clr-green-teal-transparent: rgba(0, 189, 145, 0.157);
-    --clr-cobalt-blue-transparent: rgba(17, 36, 212, 0.157);
+    --clr-light-red-transparent: rgba(255, 87, 87, 0.05);
+    --clr-orange-yellow-transparent: rgba(255, 177, 31, 0.05);
+    --clr-green-teal-transparent: rgba(0, 189, 145, 0.05);
+    --clr-cobalt-blue-transparent: rgba(17, 36, 212, 0.05);
 }
 
 p {
@@ -55,6 +55,7 @@ body {
     gap: 1.5em;
     padding: 1.4em;
     border-radius: 2em;
+    z-index: 2;
 }
 
 .circle {
@@ -101,16 +102,65 @@ body {
 
 main {
     display: flex;
-    gap: 1em;
+    /* border: 1px solid red; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* right-side */
 .right-box {
     background-color: var(--clr-white);
+    width: 20em;
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.right-box img {
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.summary {
+    font-size: 2em;
+    color: var(--clr-slate-gray);
+    margin-block: 0.2em;
 }
 
 .wrapper {
     display: flex;
+    /* flex-direction: column; */
+    padding: 1em;
+    border-radius: 0.7em;
+    justify-content: space-between
+}
+
+span {
+    color: var(--clr-light-lavender);
+    font-weight: 600;
+}
+
+button {
+    background-color: var(--clr-slate-gray);
+    border: none;
+    padding: 0.8em;
+    font-size: 1em;
+    color: var(--clr-white);
+    font-weight: 600;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-image 1s;
+}
+
+button:hover {
+    background-image: linear-gradient(var(--clr-bg-slate-blue), var(--clr-cobalt-blue))
+}
+
+.text {
+    margin-right: 2em;
+    font-weight: 600;
 }
 
 .wrapper1 {
@@ -127,6 +177,27 @@ main {
 
 .wrapper4 {
     background-color: var(--clr-cobalt-blue-transparent);
+}
+
+.wrapper1 .text {
+    color: var(--clr-light-red);
+}
+
+.wrapper2 .text {
+    color: var(--clr-orange-yellow);
+}
+
+.wrapper3 .text {
+    color: var(--clr-green-teal);
+}
+
+.wrapper4 .text {
+    color: var(--clr-bg-royal-blue);
+}
+
+.nun-result {
+    color: var(--clr-slate-gray);
+    font-weight: 600;
 }
 
 
