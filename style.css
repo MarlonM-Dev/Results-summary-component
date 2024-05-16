@@ -16,6 +16,10 @@
     --clr-orange-yellow: #ffb01f;
     --clr-green-teal: #00bd91;
     --clr-cobalt-blue: #1125d4;
+    --clr-light-red-transparent: rgba(255, 87, 87, 0.157);
+    --clr-orange-yellow-transparent: rgba(255, 177, 31, 0.157);
+    --clr-green-teal-transparent: rgba(0, 189, 145, 0.157);
+    --clr-cobalt-blue-transparent: rgba(17, 36, 212, 0.157);
 }
 
 p {
@@ -26,6 +30,10 @@ p {
     font-family: Hanken Grotesk;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--clr-pale-blue);
 }
 
 .container {
@@ -89,9 +97,37 @@ p {
     font-size: 16px;
 }
 
+/* left-side end */
+
+main {
+    display: flex;
+    gap: 1em;
+}
 
 /* right-side */
+.right-box {
+    background-color: var(--clr-white);
+}
 
+.wrapper {
+    display: flex;
+}
+
+.wrapper1 {
+    background-color: var(--clr-light-red-transparent);
+}
+
+.wrapper2 {
+    background-color: var(--clr-orange-yellow-transparent);
+}
+
+.wrapper3 {
+    background-color: var(--clr-green-teal-transparent);
+}
+
+.wrapper4 {
+    background-color: var(--clr-cobalt-blue-transparent);
+}
 
 
 
